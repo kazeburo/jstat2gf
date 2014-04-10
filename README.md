@@ -1,10 +1,10 @@
 ## jstat2gf.pl
 
-jstatからメトリクスを取得してGrowthForecastに送るクン。自動で複合グラフもいくつか作るので便利
+jstatからメトリクスを取得してGrowthForecastに送るクン。自動で複合グラフもいくつか作るので便利。
 
 ## 使い方
 
-cron実行してね
+cronで実行してね
 
     $ crontab -l
     PATH=/path/to/java/bin:/usr/bin
