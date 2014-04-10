@@ -52,7 +52,7 @@ die "fetch gccapacity failed" unless $gccapacities;
 ($st{new_max},$st{new_commit},$st{old_max},$st{old_commit},$st{perm_max},$st{perm_commit}) = @$gccapacities[1,2,7,8,11,12];
 
 my $gcolds = cap_jstat('gcold',$jvmpid);
-)die "fetch gcold failed" unless $gcolds;
+die "fetch gcold failed" unless $gcolds;
 ($st{perm_used}, $st{old_used}) = @$gcolds[1,3];
 
 my $gcnews = cap_jstat('gcnew',$jvmpid);
